@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link  href="../css/bootstrap.min.css" rel="stylesheet">
   <link  href="../css/perso.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
 
 
   <title>Page1</title>
@@ -18,44 +19,58 @@
 
 <body>
   <div class="navbar navbar-default">
-    <div class="navbar-header">
-      <p><img class="navbar-brand" alt="logo" src="../images/logo.png"> <a class="navbar-brand" href="#">Site 1</a></p>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Accueil</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-      <li><a href="#">Page 4</a></li>
+    <p><img class="navbar-brand" alt="logo" src="../images/logo.png"> <a class="navbar-brand" href="#">Logo</a></p>
+    <ul class="nav nav-tabs nav-border-color" id="myTab">
+      <li class="active"><a data-toggle="tab" href="#menu1">Accueil</a></li>
+      <li><a data-toggle="tab" href="#menu2">Messages</a></li>
+      <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" id="myTabDrop1" href="#"> Liste <b class="caret"></b></a>
+          <ul aria-labelledby="myTabDrop1" role="menu" class="dropdown-menu dropdown-menu-primary">
+              <li><a data-toggle="tab" href="#dropdown1">Texte 1</a></li>
+              <li><a data-toggle="tab" href="#dropdown2">Texte 2</a></li>
+          </ul>
+      </li>
     </ul>
-  </div>
+    <div class="tab-content">
+      <section class="row">
+        <div class="col-lg-12" class="bandeau">
+          <p><img class="bandeau" alt="logo" src="../images/mizu.png"></p>
+          <p> Kanji Mizu - EAU</p>
+        </div>
+      </section>
 
-  <section class="row">
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Salut tout le monde.</p>
+      <section class="row">
+
+        <div class="col-lg-7 col-lg-offset-2">
+          <p> Colonne Principale </p>
+          <ul class="nav nav-tabs nav-pills">
+              <li class="active"><a data-toggle="tab" href="#onglet1">Onglet 1</a></li>
+              <li><a data-toggle="tab" href="#onglet2">Onglet 2</a></li>
+              <li><a data-toggle="tab" href="#onglet3">Onglet 3</a></li>
+          </ul>
+          <div class="tab-content">
+              <div id="onglet1" class="tab-pane fade in active">
+                <h3>Onglet 1</h3>
+                <p>Some content.</p>
+              </div>
+              <div id="onglet2" class="tab-pane fade">
+                <h3>Onglet 2</h3>
+                <p>Some content in onglet 2.</p>
+              </div>
+              <div id="onglet3" class="tab-pane fade">
+                <h3>Onglet 3</h3>
+                <p>Some content in onglet 3.</p>
+              </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Salut tout le monde.</p>
+
+
+        <div class="col-lg-2">
+          <p>Colonne Informations</p>
         </div>
-      </div>
+      </section>
     </div>
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Salut tout le monde.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Salut tout le monde.</p>
-        </div>  
-      </div>
-    </div>
-  </section>
+  </div>
 
 
 
