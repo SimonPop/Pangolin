@@ -11,18 +11,18 @@
 
 
   <title>Page1</title>
-  <link rel="icon" href="../images/logo.png">
+  <link rel="icon" href="../images/../images/mizu.png">
 
 
 
 </head>
 
 <body>
-  <div class="navbar navbar-default">
-    <p><img class="navbar-brand" alt="logo" src="../images/logo.png"> <a class="navbar-brand" href="#">Logo</a></p>
+  <nav class="navbar navbar-default navbar-fixed-top ">
+    <p><img class="navbar-brand" alt="logo" src="../images/mizu.png"> <a class="navbar-brand" href="#">Logo</a></p>
     <ul class="nav nav-tabs nav-border-color" id="myTab">
-      <li class="active"><a data-toggle="tab" href="#menu1">Accueil</a></li>
-      <li><a data-toggle="tab" href="#menu2">Messages</a></li>
+      <li class="active"><a data-toggle="tab" href="#menu1"><span class="glyphicon glyphicon-home"></span> <span class = "indent"></span>Accueil</a></li>
+      <li><a data-toggle="tab" href="#menu2"><span class="glyphicon glyphicon-envelope"></span> <span class = "indent"></span>Messages</a></li>
       <li class="dropdown">
           <a data-toggle="dropdown" class="dropdown-toggle" id="myTabDrop1" href="#"> Liste <b class="caret"></b></a>
           <ul aria-labelledby="myTabDrop1" role="menu" class="dropdown-menu dropdown-menu-primary">
@@ -31,46 +31,65 @@
           </ul>
       </li>
     </ul>
-    <div class="tab-content">
-      <section class="row">
-        <div class="col-lg-12" class="bandeau">
-          <p><img class="bandeau" alt="logo" src="../images/mizu.png"></p>
-          <p> Kanji Mizu - EAU</p>
-        </div>
-      </section>
+  </nav>
 
-      <section class="row">
+    <section class="row">
+      <div class="col-lg-12" class="bandeau">
+        <p><img class="bandeau" alt="logo" src="../images/mizu.png"></p>
+        <p> Kanji Mizu - EAU</p>
+      </div>
+    </section>
 
-        <div class="col-lg-7 col-lg-offset-2">
-          <p> Colonne Principale </p>
-          <ul class="nav nav-tabs nav-pills">
-              <li class="active"><a data-toggle="tab" href="#onglet1">Onglet 1</a></li>
-              <li><a data-toggle="tab" href="#onglet2">Onglet 2</a></li>
-              <li><a data-toggle="tab" href="#onglet3">Onglet 3</a></li>
-          </ul>
-          <div class="tab-content">
-              <div id="onglet1" class="tab-pane fade in active">
-                <h3>Onglet 1</h3>
-                <p>Some content.</p>
+    <section class="row">
+
+      <div class="col-lg-7 col-lg-offset-2">
+        <p> Colonne Principale </p>
+        <ul class="nav nav-tabs nav-pills">
+            <li class="active"><a data-toggle="tab" href="#onglet1">Onglet 1</a></li>
+            <li><a data-toggle="tab" href="#onglet2">Onglet 2</a></li>
+            <li><a data-toggle="tab" href="#onglet3">Onglet 3</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="onglet1" class="tab-pane fade in active">
+              <h3>Onglet 1</h3>
+              <p>Some content.</p>
+              <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Panel titre</h3>
               </div>
-              <div id="onglet2" class="tab-pane fade">
-                <h3>Onglet 2</h3>
-                <p>Some content in onglet 2.</p>
+              <div class="panel-body">panel-primary</div>
+              </div><div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Panel titre</h3>
               </div>
-              <div id="onglet3" class="tab-pane fade">
-                <h3>Onglet 3</h3>
-                <p>Some content in onglet 3.</p>
+              <div class="panel-body">panel-primary</div>
+              </div><div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Panel titre</h3>
               </div>
-          </div>
+              <div class="panel-body">panel-primary</div>
+              </div><div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Panel titre</h3>
+              </div>
+              <div class="panel-body">panel-primary</div>
+              </div>
+            </div>
+            <div id="onglet2" class="tab-pane fade">
+              <h3>Onglet 2</h3>
+              <p>Some content in onglet 2.</p>
+            </div>
+            <div id="onglet3" class="tab-pane fade">
+              <h3>Onglet 3</h3>
+              <p>Some content in onglet 3.</p>
+            </div>
         </div>
+      </div>
 
-
-        <div class="col-lg-2">
-          <p>Colonne Informations</p>
-        </div>
-      </section>
-    </div>
-  </div>
+      <div class="col-lg-2">
+        <p>Colonne Informations</p>
+      </div>
+    </section>
 
 
 
