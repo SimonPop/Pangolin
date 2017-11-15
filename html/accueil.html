@@ -6,13 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link  href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Work+Sans" rel="stylesheet">
   <link  href="../css/perso.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-
 
   <title>Psychologue - Inès Aaron - Accueil</title>
-  <link rel="icon" href="../images/../images/mizu.png">
+  <link rel="icon" href="../images/../images/logo.png">
 
 
 
@@ -22,7 +20,8 @@
 
   <div class="radiusmongars">
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <!-- Menu -->
+  <nav class="navbar navbar-inverse navbar-fixed-top ">
     <div class="container-fluid menu">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -31,105 +30,185 @@
           <span class="icon-bar"></span>
         </button>
         <p>
-          <img class="navbar-brand" alt="logo" src="../images/mizu.png">
+          <img class="navbar-brand" alt="logo" src="../images/logo.png">
           <a class="navbar-brand" href="#TopPage">Inès Aaron</a>
         </p>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="accueil.html"><span class="glyphicon glyphicon-home"></span> <span class = "indent">Accueil</a></li>
-          <li><a href="page1.html">Page 1</a></li>
+          <li><a href="accueil.html" class="actif"><span class="glyphicon glyphicon-home"></span> <span class = "indent">Accueil</a></li>
+          <li><a href="page10.html">Page 1</a></li>
           <li><a href="page2.html">Page 2</a></li>
         </ul>
       </div>
     </div>
-</nav>
+  </nav>
+
+  <!-- Caroussel -->
+  <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img class="img_bandeau" src="../images/bandeau_thème9.png" alt="Accueil">
+        <div class="carousel-caption">
+        <h3>Accueil</h3>
+        <p>
+          <a href="page10.html">Lien</a>
+        </p>
+      </div>
+      </div>
 
 
-    <section class="bandeau" >
-        <p><img class="img_bandeau" alt="logo" src="../images/bandeau.jpg"></p>
-    </section>
+      <div class="item">
+        <img class="img_bandeau" src="../images/bandeau_thème1.png" alt="Page2">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Bandeau -->
+    <!-- <section class="bandeau">
+        <p><img class="img_bandeau" alt="bandeau" src="../images/bandeau_thème9.png"></p>
+    </section> -->
 
 
     <div class = "custom-container container-fluid">
     <section class="row">
-      <div class="col-lg-7 col-lg-offset-2">
-        <h3> Colonne Principale </h3>
-        <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" class="text-success" href="#onglet1">Onglet 1</a></li>
-            <li><a data-toggle="tab" href="#onglet2" class="text-success">Onglet 2</a></li>
-            <li><a data-toggle="tab" href="#onglet3" class="text-success">Onglet 3</a></li>
-        </ul>
-        <div class="tab-content">
-            <div id="onglet1" class="tab-pane fade in active">
-              <h4>Onglet 1</h4>
-              <p>Some content.</p>
+      <!-- Colonne principale -->
+      <div class="col-lg-7 col-lg-offset-2 colonne-mid">
+        <!-- Contenu à onglets -->
+        <article>
+          <h2 class="font"> Cabinet de Psychologue Gestalt </h2>
+          <ul class="nav nav-tabs">
+              <li class="actif"><a data-toggle="tab" class="text-success" href="#onglet1">Onglet 1</a></li>
+              <li><a data-toggle="tab" href="#onglet2" class="text-success">Onglet 2</a></li>
+              <li><a data-toggle="tab" href="#onglet3" class="text-success">Onglet 3</a></li>
+          </ul>
+          <div class="tab-content">
+              <div id="onglet1" class="tab-pane fade in active">
+                <h4>Onglet 1</h4>
+                <p>Some content.</p>
+              </div>
+              <div id="onglet2" class="tab-pane fade">
+                <h4>Onglet 2</h4>
+                <p>Some content in onglet 2.</p>
+              </div>
+              <div id="onglet3" class="tab-pane fade">
+                <h4>Onglet 3</h4>
+                <p>Some content in onglet 3.</p>
+              </div>
+          </div>
+        </article>
+        <article>
+          <!-- Contenu classique -->
+          <h3 class="text-success font">Titre</h3>
+          <p>
+            Paragraphe
+          </p>
+        </article>
+        <article>
+          <!-- Contenu à dérouler -->
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse1">Prendre Rendez-Vous <span class="glyphicon glyphicon-chevron-down"></span></a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">Panel Body</div>
+              </div>
             </div>
-            <div id="onglet2" class="tab-pane fade">
-              <h4>Onglet 2</h4>
-              <p>Some content in onglet 2.</p>
+          </div>
+        </article>
+        <!-- Liens images -->
+        <article class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="accueil.html">
+                <img src="../images/photo1.jpg" alt="photo1" style="width:100%">
+                <div class="caption">
+                  <p>Accueil</p>
+                </div>
+              </a>
             </div>
-            <div id="onglet3" class="tab-pane fade">
-              <h4>Onglet 3</h4>
-              <p>Some content in onglet 3.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="accueil.html">
+                <img src="../images/photo2.jpg" alt="photo2" style="width:100%">
+                <div class="caption">
+                  <p>Page 1</p>
+                </div>
+              </a>
             </div>
-        </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="accueil.html">
+                <img src="../images/photo5.jpg" alt="photo3" style="width:100%">
+                <div class="caption">
+                  <p>Page 2</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
       </div>
 
+      <!-- Colonne informations -->
       <div class="col-lg-2">
-        <h3>Colonne Informations</h3>
         <h4 class="titre_info text-success">
           <span class="glyphicon glyphicon-time"></span> <span class = "indent"> Horaires
         </h4>
         <p>
-          <ul class="list-unstyled">
-            <li>
-              lundi : 9h - 18h
-            </li>
-            <li>
-              mardi : 9h - 18h
-            </li>
-            <li>
-              mercredi : 9h - 18h
-            </li>
-            <li>
-              jeudi : 9h - 18h
-            </li>
-            <li>
-              vendredi : 9h - 18h
-            </li>
-            <li>
-              samedi : 9h - 12h
-            </li>
-          </ul>
+          du <strong>Lundi</strong> au <strong>Samedi</strong> de 8h00 à 20h00
         </p>
-        <h4 class="titre_info text-success">
-          <span class="glyphicon glyphicon-flag"></span> <span class = "indent">Adresse
-        </h4>
-        <p>
-          00 DisneyLand Paris
-        </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.264484660989!2d2.773619215990387!3d48.87223437928887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61d19ca7ae2bd%3A0x57faf8cb6310e660!2sDisneyland+Paris!5e0!3m2!1sfr!2sfr!4v1510487074810" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
         <h4 class="titre_info text-success">
           <span class="glyphicon glyphicon-earphone"></span> <span class = "indent">Teléphone
         </h4>
         <p>
-          06 00 00 00 00
+          06 73 50 05 09
         </p>
         <h4 class="titre_info text-success">
           <span class="glyphicon glyphicon-envelope"></span> <span class = "indent">E-Mail
         </h4>
         <p>
-          ines.aarpop@gmail.com
-          <button type="button" class="btn btn-success" href="mailto:simon.popelier@orange.fr">Envoyer un Email</button>
+          ines.aaron.psy@gmail.com
         </p>
+        <form action="mailto:ines.aaron.psy@gmail.com" method="GET">
+          <button type="button submit" value="Send" class="btn btn-success">Envoyer un Email</button>
+        </form>
+        <h4 class="titre_info text-success">
+          <span class="glyphicon glyphicon-flag"></span> <span class = "indent">Adresse
+        </h4>
+        <p>
+          42 bd Port Royal 75005 Paris
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21008.69332033837!2d2.330067438835469!3d48.83748557928541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671eb69126e1b%3A0xdd4a84cf6e03bb10!2s42+Boulevard+de+Port-Royal%2C+75005+Paris!5e0!3m2!1sfr!2sfr!4v1510517237211" width="250" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
       </div>
     </section>
   </div>
 
   <footer class="footer">
       <div class="container">
-        <span class="text-muted">Inès Aaron</span>
+        <span class="text-muted">- Inès Aaron -</span>
       </div>
     </footer>
 
