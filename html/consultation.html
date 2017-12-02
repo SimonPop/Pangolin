@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link  href="../css/perso.css" rel="stylesheet">
 
-  <title>Psychologue - Inès Aaron - Accueil</title>
+  <title>Psychologue - Inès Aaron - Consultations</title>
   <link rel="icon" href="../images/../images/logo.png">
 
 
@@ -18,7 +18,6 @@
 
 <body id="TopPage">
 
-  <div class="radiusmongars">
 
   <!-- Menu -->
   <nav class="navbar navbar-inverse navbar-fixed-top ">
@@ -36,9 +35,9 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="accueil.html" class="actif"><span class="glyphicon glyphicon-home"></span> <span class = "indent">Accueil</a></li>
+          <li><a href="accueil.html"><span class="glyphicon glyphicon-home"></span> <span class = "indent">Accueil</a></li>
           <li><a href="rdv.html"> <span class="glyphicon glyphicon-calendar"></span> <span class = "indent">Rendez-Vous</a></li>
-          <li><a href="consultation.html">Consultations - Psychothérapie</a></li>
+          <li><a href="consultation.html" class="actif">Consultations - Psychothérapie</a></li>
           <li><a href="parcours.html">Psychologue Clinicienne</a></li>
           <li><a href="gestalt.html">Gestalt Praticienne</a></li>
           <li><a href="etp.html">ETP</a></li>
@@ -50,58 +49,50 @@
 
   <!-- Bandeau -->
     <section class="bandeau">
-        <p><img class="img_bandeau" style="border-bottom : 1px solid lightgrey" alt="bandeau" src="../images/bandeau_sans_photo.png"></p>
+      <p>
+        <img class="img_bandeau" alt="bandeau" src="../images/bandeau_goutte.png">
+      </p>
     </section>
 
 
     <div class = "custom-container container-fluid">
     <section class="row">
       <!-- Colonne principale -->
-      <div class="col-lg-9 col-lg-offset-1 colonne-mid">
-
-        <article class="row container-fluid">
-          <div class="conteneur-image">
-            <a href="consultation.html">
-            <img src="../images/bandeau_goutte.png" alt="Consultations" style="width:100%;">
-            <div class="centered" style="font-size:200%">Consultations-Psychothérapie</div>
-            </a>
-          </div>
+      <div class="col-lg-8 col-lg-offset-2 colonne-mid">
+        <!-- Contenu à onglets -->
+        <article>
+          <h2 class="font"> Consultations </h2>
         </article>
 
+
+        <article class="row">
+          <ul>
+              <li class="active onglet conteneur-image"><a data-toggle="tab" href="#onglet1"><img class="onglet_img" src="../images/enfant.jpg" alt="enfants"><div class="centered">Enfant</div></a></li>
+              <li class="onglet conteneur-image"><a data-toggle="tab" href="#onglet2"><img class="onglet_img" src="../images/adolescent.png" alt="adolescentes"><div class="centered">Adolescent</div></a></li>
+              <li class="onglet conteneur-image"><a data-toggle="tab" href="#onglet3"><img class="onglet_img" src="../images/adulte.jpg" alt="adultes"><div class="centered">Adulte</div></a></li>
+              <li class="onglet conteneur-image"><a data-toggle="tab" href="#onglet4"><img class="onglet_img" src="../images/famille.jpg" alt="familles"><div class="centered">Famille</div></a></li>
+          </ul>
+          <div class="tab-content  well well-sm">
+              <div id="onglet1" class="tab-pane fade in active">
+                <h4>Rendez-vous : Enfants</h4>
+                <p>Texte pour les consultations enfants.</p>
+              </div>
+              <div id="onglet2" class="tab-pane fade">
+                <h4>Rendez-vous : Adolescents</h4>
+                <p>Texte pour les consultations ados.</p>
+              </div>
+              <div id="onglet3" class="tab-pane fade">
+                <h4>Rendez-vous  : Adultes</h4>
+                <p>Texte pour les consultations adultes.</p>
+              </div>
+              <div id="onglet4" class="tab-pane fade">
+                <h4>Rendez-vous  : Familles</h4>
+                <p>Texte pour les consultations familles.</p>
+              </div>
+          </div>
+        </article>
 
         <!-- Liens images -->
-        <article class="row">
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="parcours.html">
-                <img src="../images/paysage.jpg" alt="photo_psychologue" style="width:100%">
-                <div class="caption">
-                  <p>Psychologue clinicienne</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="gestalt.html">
-                <img src="../images/reflet.jpg" alt="photo_gestalt" style="width:100%">
-                <div class="caption">
-                  <p>Gestalt praticienne</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="etp.html">
-                <img src="../images/mur.jpg" alt="photo_etp" style="width:100%">
-                <div class="caption">
-                  <p>Éducation Thérapeutique du patient</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </article>
       </div>
 
       <!-- Colonne informations -->
